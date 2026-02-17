@@ -2,95 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --background: 210 100% 98%;
+    --foreground: 0 0% 4%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 4%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --popover-foreground: 0 0% 4%;
+    --primary: 355 78% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 205 100% 93%;
+    --secondary-foreground: 205 60% 30%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 205 100% 75%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 205 100% 65%;
+    --radius: 0.75rem;
+    --sidebar-background: 205 80% 55%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 205 80% 55%;
+    --sidebar-accent: 205 80% 65%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 205 80% 65%;
+    --sidebar-ring: 0 0% 100%;
+    --sky: 205 100% 75%;
+    --sky-dark: 205 75% 62%;
+    --sky-light: 205 100% 93%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 220 20% 10%;
     --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
+    --card: 220 20% 14%;
     --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
+    --popover: 220 20% 14%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
+    --primary: 355 78% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 205 60% 25%;
     --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 205 80% 40%;
     --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62% 30%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 205 80% 50%;
   }
 }
 
@@ -98,8 +64,92 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .sidebar-gradient {
+    background: linear-gradient(180deg, hsl(205, 80%, 58%) 0%, hsl(205, 75%, 42%) 100%);
+  }
+  .stat-card {
+    @apply bg-card rounded-xl p-5 shadow-sm border border-border transition-shadow hover:shadow-md;
+  }
+  .page-header {
+    @apply text-2xl font-bold text-foreground mb-6;
+  }
+  .data-table {
+    @apply w-full bg-card rounded-xl shadow-sm border border-border overflow-hidden;
+  }
+  .badge-status {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-active {
+    @apply badge-status bg-emerald-100 text-emerald-700;
+  }
+  .badge-inactive {
+    @apply badge-status bg-red-100 text-red-700;
+  }
+  .badge-pending {
+    @apply badge-status bg-amber-100 text-amber-700;
+  }
+  .badge-approved {
+    @apply badge-status bg-emerald-100 text-emerald-700;
+  }
+  .badge-rejected {
+    @apply badge-status bg-red-100 text-red-700;
+  }
+  .badge-open {
+    @apply badge-status bg-sky-100 text-sky-700;
+  }
+  .badge-high {
+    @apply badge-status bg-red-100 text-red-700;
+  }
+  .badge-medium {
+    @apply badge-status bg-amber-100 text-amber-700;
+  }
+  .badge-low {
+    @apply badge-status bg-emerald-100 text-emerald-700;
+  }
+  .card-section {
+    @apply bg-card rounded-xl shadow-sm border border-border p-5;
+  }
+  .input-field {
+    @apply w-full px-3 py-2 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring transition-colors;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:opacity-90 transition-opacity disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-accent text-accent-foreground rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 text-muted-foreground rounded-lg font-medium text-sm hover:bg-muted transition-colors;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+  .animate-slide-in {
+    animation: slideIn 0.3s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-12px); }
+    to { opacity: 1; transform: translateX(0); }
   }
 }
