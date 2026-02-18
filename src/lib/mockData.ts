@@ -185,6 +185,96 @@ const settings = {
   ],
 };
 
+const crmLeads = [
+  { id:'lead_001', title:'Insurance Lead', firstName:'Mahi1283', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100001', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'New', createdAt:'2026-01-10T00:00:00Z' },
+  { id:'lead_002', title:'Insurance Lead', firstName:'Mahi4918', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100002', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'Contacted', createdAt:'2026-01-11T00:00:00Z' },
+  { id:'lead_003', title:'Insurance Lead', firstName:'Mahi4965', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100003', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'Qualified', createdAt:'2026-01-12T00:00:00Z' },
+  { id:'lead_004', title:'', firstName:'eee', lastName:'', email:'e@e.com', phone:'', leadSource:'Website', industry:'Finance', annualRevenue:1111, status:'New', createdAt:'2026-01-13T00:00:00Z' },
+  { id:'lead_005', title:'Insurance Lead', firstName:'Mahi1240', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100005', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'New', createdAt:'2026-01-14T00:00:00Z' },
+  { id:'lead_006', title:'Insurance Lead', firstName:'Mahi4055', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100006', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'Contacted', createdAt:'2026-01-15T00:00:00Z' },
+  { id:'lead_007', title:'Insurance Lead', firstName:'Mahi4651', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100007', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'New', createdAt:'2026-01-16T00:00:00Z' },
+  { id:'lead_008', title:'Insurance Lead', firstName:'Mahi1375', lastName:'', email:'Mahi@gmail.com', phone:'+91-9800100008', leadSource:'Campaign', industry:'Banking', annualRevenue:4000000, status:'Qualified', createdAt:'2026-01-17T00:00:00Z' },
+  { id:'lead_009', title:'Tech Lead', firstName:'Arjun', lastName:'Mehta', email:'arjun@tech.com', phone:'+91-9800100009', leadSource:'Website', industry:'Technology', annualRevenue:8000000, status:'Converted', createdAt:'2026-01-18T00:00:00Z' },
+  { id:'lead_010', title:'Healthcare Lead', firstName:'Sneha', lastName:'R', email:'sneha@health.com', phone:'+91-9800100010', leadSource:'Referral', industry:'Healthcare', annualRevenue:5000000, status:'New', createdAt:'2026-01-19T00:00:00Z' },
+  { id:'lead_011', title:'Retail Lead', firstName:'Vikram', lastName:'', email:'vikram@retail.com', phone:'+91-9800100011', leadSource:'Event', industry:'Retail', annualRevenue:3000000, status:'Contacted', createdAt:'2026-01-20T00:00:00Z' },
+  { id:'lead_012', title:'Education Lead', firstName:'Priya', lastName:'S', email:'priya@edu.com', phone:'+91-9800100012', leadSource:'Social Media', industry:'Education', annualRevenue:2000000, status:'New', createdAt:'2026-01-21T00:00:00Z' },
+  { id:'lead_013', title:'Mfg Lead', firstName:'Rajesh', lastName:'K', email:'rajesh@mfg.com', phone:'+91-9800100013', leadSource:'Phone', industry:'Manufacturing', annualRevenue:10000000, status:'Qualified', createdAt:'2026-01-22T00:00:00Z' },
+  { id:'lead_014', title:'Partner Lead', firstName:'Divya', lastName:'N', email:'divya@partner.com', phone:'+91-9800100014', leadSource:'Partner', industry:'Finance', annualRevenue:6000000, status:'New', createdAt:'2026-01-23T00:00:00Z' },
+  { id:'lead_015', title:'Email Lead', firstName:'Karthik', lastName:'V', email:'karthik@email.com', phone:'+91-9800100015', leadSource:'Email', industry:'Technology', annualRevenue:7000000, status:'Contacted', createdAt:'2026-01-24T00:00:00Z' },
+];
+
+const crmAccounts = [
+  { id:'acc_001', accountName:'individual', accountNumber:'A-1001', accountOwner:'Abhishek K', accountType:'Customer', accountSource:'Website', annualRevenue:0, createdAt:'2026-01-01T00:00:00Z' },
+  { id:'acc_002', accountName:'zz', accountNumber:'A-1002', accountOwner:'Abhishek K', accountType:'Prospect', accountSource:'Website', annualRevenue:0, createdAt:'2026-01-02T00:00:00Z' },
+  { id:'acc_003', accountName:'Jaanu', accountNumber:'A-1003', accountOwner:'John Kelly', accountType:'Customer', accountSource:'Referral', annualRevenue:500000, createdAt:'2026-01-03T00:00:00Z' },
+  { id:'acc_004', accountName:'Jaanu', accountNumber:'A-1004', accountOwner:'John Kelly', accountType:'Partner', accountSource:'Event', annualRevenue:0, createdAt:'2026-01-04T00:00:00Z' },
+  { id:'acc_005', accountName:'Mahi', accountNumber:'A-1005', accountOwner:'John Kelly', accountType:'Customer', accountSource:'Campaign', annualRevenue:800000, createdAt:'2026-01-05T00:00:00Z' },
+  { id:'acc_006', accountName:'Vinusha M', accountNumber:'A-1006', accountOwner:'Jennifer Williams', accountType:'Prospect', accountSource:'Direct', annualRevenue:0, createdAt:'2026-01-06T00:00:00Z' },
+  { id:'acc_007', accountName:'Vinusha M', accountNumber:'A-1007', accountOwner:'Cynthia Palmer', accountType:'Vendor', accountSource:'Website', annualRevenue:350000, createdAt:'2026-01-07T00:00:00Z' },
+  { id:'acc_008', accountName:'test company (Copy)', accountNumber:'A-1008', accountOwner:'Abhishek K', accountType:'Customer', accountSource:'Event', annualRevenue:0, createdAt:'2026-01-08T00:00:00Z' },
+  { id:'acc_009', accountName:'RiseTech Solutions', accountNumber:'A-1009', accountOwner:'Admin User', accountType:'Customer', accountSource:'Website', annualRevenue:2000000, createdAt:'2026-01-09T00:00:00Z' },
+  { id:'acc_010', accountName:'Global Finance Corp', accountNumber:'A-1010', accountOwner:'Admin User', accountType:'Partner', accountSource:'Referral', annualRevenue:5000000, createdAt:'2026-01-10T00:00:00Z' },
+  { id:'acc_011', accountName:'MedCare Inc', accountNumber:'A-1011', accountOwner:'Priya Sharma', accountType:'Customer', accountSource:'Campaign', annualRevenue:3000000, createdAt:'2026-01-11T00:00:00Z' },
+  { id:'acc_012', accountName:'EduLearn Pvt', accountNumber:'A-1012', accountOwner:'Priya Sharma', accountType:'Prospect', accountSource:'Event', annualRevenue:0, createdAt:'2026-01-12T00:00:00Z' },
+  { id:'acc_013', accountName:'ManufactPro', accountNumber:'A-1013', accountOwner:'Admin User', accountType:'Vendor', accountSource:'Direct', annualRevenue:8000000, createdAt:'2026-01-13T00:00:00Z' },
+  { id:'acc_014', accountName:'RetailMax', accountNumber:'A-1014', accountOwner:'John Kelly', accountType:'Customer', accountSource:'Website', annualRevenue:1500000, createdAt:'2026-01-14T00:00:00Z' },
+  { id:'acc_015', accountName:'CloudNet Services', accountNumber:'A-1015', accountOwner:'Admin User', accountType:'Partner', accountSource:'Referral', annualRevenue:4000000, createdAt:'2026-01-15T00:00:00Z' },
+];
+
+const crmContacts = [
+  { id:'con_001', accountId:'acc_009', firstName:'Amit', lastName:'Kumar', email:'xyz@gmail.com', phone:'+91-9900100001', designation:'CEO', createdAt:'2026-01-01T00:00:00Z' },
+  { id:'con_002', accountId:'acc_009', firstName:'Anjali', lastName:'Parmar', email:'anjali@riseotech.com', phone:'+91-9900100002', designation:'CTO', createdAt:'2026-01-02T00:00:00Z' },
+  { id:'con_003', accountId:'acc_010', firstName:'Vinusha', lastName:'v', email:'gvinusha6244@gmail.com', phone:'+91-9900100003', designation:'Manager', createdAt:'2026-01-03T00:00:00Z' },
+  { id:'con_004', accountId:'acc_011', firstName:'Lead creation', lastName:'M', email:'lead@gmail.com', phone:'+91-9900100004', designation:'Director', createdAt:'2026-01-04T00:00:00Z' },
+  { id:'con_005', accountId:'acc_012', firstName:'Chanti', lastName:'G', email:'Cahnti@gamil.com', phone:'+91-9900100005', designation:'VP', createdAt:'2026-01-05T00:00:00Z' },
+  { id:'con_006', accountId:'acc_001', firstName:'Rahul', lastName:'S', email:'rahul@test.com', phone:'+91-9900100006', designation:'Sales Lead', createdAt:'2026-01-06T00:00:00Z' },
+  { id:'con_007', accountId:'acc_003', firstName:'Meera', lastName:'P', email:'meera@jaanu.com', phone:'+91-9900100007', designation:'HR Manager', createdAt:'2026-01-07T00:00:00Z' },
+  { id:'con_008', accountId:'acc_005', firstName:'Suresh', lastName:'K', email:'suresh@mahi.com', phone:'+91-9900100008', designation:'Accountant', createdAt:'2026-01-08T00:00:00Z' },
+  { id:'con_009', accountId:'acc_013', firstName:'Kavitha', lastName:'R', email:'kavitha@mfg.com', phone:'+91-9900100009', designation:'Ops Head', createdAt:'2026-01-09T00:00:00Z' },
+  { id:'con_010', accountId:'acc_014', firstName:'Arjun', lastName:'D', email:'arjun@retail.com', phone:'+91-9900100010', designation:'Store Manager', createdAt:'2026-01-10T00:00:00Z' },
+  { id:'con_011', accountId:'acc_015', firstName:'Neha', lastName:'T', email:'neha@cloud.com', phone:'+91-9900100011', designation:'DevOps', createdAt:'2026-01-11T00:00:00Z' },
+  { id:'con_012', accountId:'acc_002', firstName:'Rohan', lastName:'M', email:'rohan@zz.com', phone:'+91-9900100012', designation:'Intern', createdAt:'2026-01-12T00:00:00Z' },
+  { id:'con_013', accountId:'acc_006', firstName:'Divya', lastName:'V', email:'divya@vin.com', phone:'+91-9900100013', designation:'Analyst', createdAt:'2026-01-13T00:00:00Z' },
+  { id:'con_014', accountId:'acc_007', firstName:'Karthik', lastName:'N', email:'karthik@vin.com', phone:'+91-9900100014', designation:'Tech Lead', createdAt:'2026-01-14T00:00:00Z' },
+  { id:'con_015', accountId:'acc_008', firstName:'Sneha', lastName:'A', email:'sneha@test.com', phone:'+91-9900100015', designation:'QA Lead', createdAt:'2026-01-15T00:00:00Z' },
+];
+
+const crmReports = [
+  { id:'rep_001', reportName:'Test', module:'Lead', folder:'Lead Folder', isFavourite:false, createdAt:'2026-01-01T00:00:00Z' },
+  { id:'rep_002', reportName:'Lead By FirstName', module:'Lead', folder:'Lead Folder', isFavourite:true, createdAt:'2026-01-02T00:00:00Z' },
+  { id:'rep_003', reportName:'Contacts By City', module:'Contact', folder:'Default Reports', isFavourite:false, createdAt:'2026-01-03T00:00:00Z' },
+  { id:'rep_004', reportName:'Leads by Campaign', module:'Campaign', folder:'Opportunity Folder', isFavourite:false, createdAt:'2026-01-04T00:00:00Z' },
+  { id:'rep_005', reportName:'Lead Source', module:'Lead', folder:'Lead Folder', isFavourite:true, createdAt:'2026-01-05T00:00:00Z' },
+  { id:'rep_006', reportName:'Sales Report', module:'Lead', folder:'Lead Folder', isFavourite:false, createdAt:'2026-01-06T00:00:00Z' },
+  { id:'rep_007', reportName:'Opportunities by Source', module:'Opportunity', folder:'Opportunity Folder', isFavourite:false, createdAt:'2026-01-07T00:00:00Z' },
+  { id:'rep_008', reportName:'Opportunities by Stage', module:'Opportunity', folder:'Opportunity Folder', isFavourite:true, createdAt:'2026-01-08T00:00:00Z' },
+  { id:'rep_009', reportName:'Leads by Status', module:'Lead', folder:'Default Reports', isFavourite:false, createdAt:'2026-01-09T00:00:00Z' },
+  { id:'rep_010', reportName:'Attendance Summary', module:'Attendance', folder:'HR Folder', isFavourite:false, createdAt:'2026-01-10T00:00:00Z' },
+  { id:'rep_011', reportName:'Leave Report', module:'Leave', folder:'HR Folder', isFavourite:true, createdAt:'2026-01-11T00:00:00Z' },
+  { id:'rep_012', reportName:'Payroll Summary', module:'Payroll', folder:'HR Folder', isFavourite:false, createdAt:'2026-01-12T00:00:00Z' },
+  { id:'rep_013', reportName:'Employee Headcount', module:'Employee', folder:'HR Folder', isFavourite:false, createdAt:'2026-01-13T00:00:00Z' },
+  { id:'rep_014', reportName:'Campaign ROI', module:'Campaign', folder:'Custom', isFavourite:false, createdAt:'2026-01-14T00:00:00Z' },
+  { id:'rep_015', reportName:'Account Revenue', module:'Account', folder:'Default Reports', isFavourite:true, createdAt:'2026-01-15T00:00:00Z' },
+];
+
+const crmCalendarEvents = [
+  { id:'evt_001', title:'User Unification', date:'2026-02-09', time:'3:00pm', type:'task', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_002', title:'Lead Closing', date:'2026-02-11', time:'3:49pm', type:'event', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_003', title:'Campaign Review', date:'2026-02-13', time:'3:30pm', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_004', title:'In Mall Visit', date:'2026-02-14', time:'11:36am', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_005', title:'Vista Task', date:'2026-02-07', time:'6:13pm', type:'task', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_006', title:'Team Standup', date:'2026-02-16', time:'9:00am', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_007', title:'Sprint Review', date:'2026-02-16', time:'2:00pm', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_008', title:'Client Demo', date:'2026-02-17', time:'10:00am', type:'event', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_009', title:'Pipeline Update', date:'2026-02-17', time:'3:00pm', type:'task', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_010', title:'Insurance Review', date:'2026-03-14', time:'2:34pm', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_011', title:'Quarterly Planning', date:'2026-02-20', time:'10:00am', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_012', title:'HR Sync', date:'2026-02-20', time:'2:00pm', type:'task', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_013', title:'Lead Follow-up', date:'2026-02-20', time:'4:00pm', type:'task', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_014', title:'OOO - Vacation', date:'2026-02-25', time:'', type:'unavailability', color:'', createdAt:'2026-02-01T00:00:00Z' },
+  { id:'evt_015', title:'Board Meeting', date:'2026-02-28', time:'9:00am', type:'meeting', color:'', createdAt:'2026-02-01T00:00:00Z' },
+];
+
 export function initializeMockData() {
   if (getAll(KEYS.USERS).length === 0) {
     setAll(KEYS.USERS, users);
@@ -221,5 +311,20 @@ export function initializeMockData() {
   }
   if (getAll('hr_performance').length === 0) {
     setAll('hr_performance', performance);
+  }
+  if (getAll(KEYS.LEADS).length === 0) {
+    setAll(KEYS.LEADS, crmLeads);
+  }
+  if (getAll(KEYS.ACCOUNTS).length === 0) {
+    setAll(KEYS.ACCOUNTS, crmAccounts);
+  }
+  if (getAll(KEYS.CONTACTS).length === 0) {
+    setAll(KEYS.CONTACTS, crmContacts);
+  }
+  if (getAll(KEYS.REPORTS).length === 0) {
+    setAll(KEYS.REPORTS, crmReports);
+  }
+  if (getAll(KEYS.CALENDAR_EVENTS).length === 0) {
+    setAll(KEYS.CALENDAR_EVENTS, crmCalendarEvents);
   }
 }

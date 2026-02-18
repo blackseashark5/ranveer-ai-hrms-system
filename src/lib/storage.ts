@@ -10,6 +10,11 @@ export const KEYS = {
   ASSETS: 'hr_assets',
   ANNOUNCEMENTS: 'hr_announcements',
   SETTINGS: 'hr_settings',
+  LEADS: 'hr_leads',
+  ACCOUNTS: 'hr_accounts',
+  CONTACTS: 'hr_contacts',
+  REPORTS: 'hr_reports',
+  CALENDAR_EVENTS: 'hr_calendar_events',
   CURRENT_USER: 'hr_current_user',
 } as const;
 

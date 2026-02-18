@@ -4,7 +4,8 @@ import { getCurrentUser, logout } from '@/lib/auth';
 import {
   LayoutDashboard, Users, Clock, CalendarDays, Wallet,
   Briefcase, Ticket, TrendingUp, Monitor, Megaphone,
-  Settings, LogOut, Menu, X, Bell
+  Settings, LogOut, Menu, X, Bell, Target, Building2,
+  FileBarChart, Calendar
 } from 'lucide-react';
 
 const navItems = [
@@ -18,6 +19,10 @@ const navItems = [
   { path: '/performance', label: 'Performance', icon: TrendingUp },
   { path: '/assets', label: 'Assets', icon: Monitor },
   { path: '/announcements', label: 'Announcements', icon: Megaphone },
+  { path: '/leads', label: 'Leads', icon: Target },
+  { path: '/accounts', label: 'Accounts', icon: Building2 },
+  { path: '/reports', label: 'Reports', icon: FileBarChart },
+  { path: '/calendar', label: 'Calendar', icon: Calendar },
   { path: '/settings', label: 'Settings', icon: Settings },
 ];
 
