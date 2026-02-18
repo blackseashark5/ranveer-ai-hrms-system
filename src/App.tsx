@@ -21,6 +21,10 @@ import Performance from "./pages/Performance";
 import AssetsPage from "./pages/AssetsPage";
 import Announcements from "./pages/Announcements";
 import Settings from "./pages/Settings";
+import Leads from "./pages/Leads";
+import Accounts from "./pages/Accounts";
+import Reports from "./pages/Reports";
+import CalendarPage from "./pages/CalendarPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -60,6 +64,10 @@ const App = () => (
           <Route path="/performance" element={<ProtectedRoute><Performance /></ProtectedRoute>} />
           <Route path="/assets" element={<ProtectedRoute><AssetsPage /></ProtectedRoute>} />
           <Route path="/announcements" element={<ProtectedRoute><Announcements /></ProtectedRoute>} />
+          <Route path="/leads" element={<ProtectedRoute><Leads /></ProtectedRoute>} />
+          <Route path="/accounts" element={<ProtectedRoute><Accounts /></ProtectedRoute>} />
+          <Route path="/reports" element={<ProtectedRoute><Reports /></ProtectedRoute>} />
+          <Route path="/calendar" element={<ProtectedRoute><CalendarPage /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
