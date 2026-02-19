@@ -2,6 +2,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useEffect } from "react";
 import { getCurrentUser } from "@/lib/auth";
 import { initializeMockData } from "@/lib/mockData";
 import Layout from "@/components/Layout";
@@ -29,8 +30,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Initialize mock data on app load
 initializeMockData();
+
+function VoiceAgentRedirect() {
+  useEffect(() => {
+    window.open("https://ranveer-voice-agent.netlify.app/phone", "_blank");
+  }, []);
+  return null;
+}
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const user = getCurrentUser();
@@ -53,6 +60,7 @@ const App = () => (
           <Route path="/" element={<PublicRoute><LoginPage /></PublicRoute>} />
           <Route path="/signup" element={<PublicRoute><SignupPage /></PublicRoute>} />
           <Route path="/forgot-password" element={<PublicRoute><ForgotPasswordPage /></PublicRoute>} />
+
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/employees" element={<ProtectedRoute><Employees /></ProtectedRoute>} />
           <Route path="/employee/:id" element={<ProtectedRoute><EmployeeProfile /></ProtectedRoute>} />
@@ -69,6 +77,9 @@ const App = () => (
           <Route path="/reports" element={<ProtectedRoute><Reports /></ProtectedRoute>} />
           <Route path="/calendar" element={<ProtectedRoute><CalendarPage /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+
+          <Route path="/voice-agent" element={<ProtectedRoute><VoiceAgentRedirect /></ProtectedRoute>} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
